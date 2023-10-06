@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>js_jsp_utf8</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>jsPay</servlet-name>
+    <servlet-class>com.jytpay.action.TestJSPayServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>jsPay</servlet-name>
+    <url-pattern>/jsPay</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ASPay</servlet-name>
+    <servlet-class>com.jytpay.action.TestASPayServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ASPay</servlet-name>
+    <url-pattern>/asPay</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>PSPay</servlet-name>
+    <servlet-class>com.jytpay.action.TestPSPayServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PSPay</servlet-name>
+    <url-pattern>/psPay</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>refund</servlet-name>
+    <servlet-class>com.jytpay.action.TestRefundServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>refund</servlet-name>
+    <url-pattern>/refund</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>MchConfig</servlet-name>
+    <servlet-class>com.jytpay.action.TestMchConfigServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MchConfig</servlet-name>
+    <url-pattern>/mchConfig</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <servlet-name>h5Pay</servlet-name>
+    <servlet-class>com.jytpay.action.TestH5PayServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>h5Pay</servlet-name>
+    <url-pattern>/h5Pay</url-pattern>
+  </servlet-mapping>
+</web-app>
